@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>Movie Info</title>
+    <style type = text/css>
+
+     /*Website background color*/
+     body {
+        background-color: lightblue  }
+     
+     /*Main Header Format*/
+     #main_header {       
+        background-color: pink;
+        color: blue;
+        text-align: center;
+        font-family: Courier New, Times, serif }
+     
+     /*Next Page link format*/
+     #next {
+        position: absolute;
+        top: 310%;
+        right: 2%;
+        font-size: 1.6em }
+
+     /*List heading format*/
+     #list_heading {
+        padding-right: 60em }
+
+     /*List Format*/
+     #Streaming_Sites_List {
+        position: absolute }
+
+     /*Table Format*/
+     #table {
+        position: absolute;
+        right: 14% }
+
+     /*Color of hyperlink*/
+     a:link {
+        color: blue }
+
+     /*Color of hyperlink when visited*/
+     a:visited {
+        color: purple }
+    
+     /*Color of hyperlink when mouse over it*/
+     a:hover {
+        color: black }
+
+     /*Heading 2 format*/
+     h2 {
+        position: absolute;
+        top: 21%; 
+        right: 24% }
+
+     /*iframe format*/
+     iframe {
+        position: absolute;
+        top: 65% }
+
+     /*Dropdown list format*/
+     #dropdownlist {
+        position: absolute;
+        right: 1% }
+ 
+     /*Genre label format*/
+     #genre_label {
+        position: absolute;
+        right: 8%;
+        top: 24% }
+ 
+     /*select tag format*/
+     select {
+        top: 24% }
+    
+     /*Genre input format*/ 
+     #genre_input {
+        top: 28%;
+        position: absolute;
+        right: 1% }
+
+    /*marguee tag format*/
+     marquee {
+        font-size: 1.2em;
+        color: red}
+
+     /*feedback div format*/
+     #feedback {
+        position: absolute;
+        top : 100% }
+     
+    </style>
+
+  </head>
+  
+  <body>
+    <!--Main Header-->
+    <div id = main_header> 
+      <h1>Find all information relating to movies here!!!</h1><hr width= "50%"/>
+    </div>
+
+    <!--Marquee-->
+    <marquee scrollamount = "12">All information you have ever wanted about movies!!!</marquee>
+    <marquee direction="right" scrollamount = "12">All in one place!!!</marquee>
+    
+    <!--The Best Movie Streaming Sites List-->
+    <div id = "Streaming_Sites_List">
+    <ul>
+      <h3 id = "list_heading">The Best Movie Streaming Sites</h3>
+      <li>Disney+</li>
+      <li>YouTube Premium</li>
+      <li>Mubi</li>
+      <li>Netflix</li>
+      <li>BFI Player</li>
+      <li>Now TV</li>
+      <li>Amazon Prime</li>
+      <li>BritBox</li>
+    </ul>
+    </div>
+
+    <!--Genre Dropdownlist-->
+    <form action="">
+      <label id="genre_label" for="genre">Choose a genre:</label>
+      <select name="genres" id = "dropdownlist">
+        <option value="action">Action</option>
+        <option value="thriller">Thriller</option>
+        <option value="horror">Horror</option>
+        <option value="adventure">Adventure</option>
+      </select>
+      <br/><br/>
+      <input type="submit" value="Submit" id="genre_input">
+    </form>
+ 
+   <!--iFrame Youtube video-->
+   <iframe width="305" height="185" src="https://www.youtube.com/embed/Md5eKOM6rvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+   <!--Feedback Textboxes-->
+   <div id = "feedback">
+     <b>Please give us your feedback</b><br/><br/>
+     <form action="">
+       <label for="fname">First Name:</label>
+       <input type="text" id="fname" name="fname"><br/>
+       <label for="lname">Last Name:</label>
+       <input type="text" id="lname" name="lname"><br/><br/>
+       <label for="message">Feedback:</label>
+       <textarea rows = "5" cols = "30" name = "feedback"></textarea><br/><br/>
+       <input type="submit" value="Submit" id="feedback_submit">     
+     </form>
+   </div>
+
+    <!--Table title-->
+   <p>
+     <h2>If you want more details click on the movie names.</h2>
+   </p>
+
+    <!--Movie Table-->  
+    <table border = "2" id = table>
+      <!--Headers-->
+      <tr>
+        <th>Front Cover</th>
+        <th>Name</th>
+	<th>Year</th>
+        <th>Rating</th>
+      </tr>
+      <!--Godzilla vs. Kong-->
+      <tr>
+        <td><img src = "https://m.media-amazon.com/images/M/MV5BZmYzMzU4NjctNDI0Mi00MGExLWI3ZDQtYzQzYThmYzc2ZmNjXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg" width="200" height="300"/></td>
+        <td width="200" height="300" align="center"><a href = "https://www.imdb.com/title/tt5034838/">Godzilla vs. Kong</a></td>
+        <td width="200" height="300" align="center">2021</td>
+        <td width="200" height="300" align="center">6.6</td>
+      </tr>
+      <!--Wonder Women 1984-->
+      <tr>
+        <td><img src = "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTh6DdPBhzs5OuDYGiYTqRh6YyLWQV8bUOuL7d0TBD8o9zk15fq" width="200" height="300"/></td>
+        <td width="200" height="300" align="center"><a href = "https://www.imdb.com/title/tt7126948/">Wonder Woman 1984</a></td>
+        <td width="200" height="300" align="center">2020</td>
+        <td width="200" height="300" align="center">5.4</td>
+      </tr>
+      <!--Transformars The Last Knight-->
+      <tr>
+        <td><img src = "http://www.movienewsletters.net/photos/192717R1.jpg" width="200" height="300"/></td>
+        <td width="200" height="300" align="center"><a href = "https://www.imdb.com/title/tt3371366/">Transformers: The Last Knight</a></td>
+        <td width="200" height="300" align="center">2017</td>
+        <td width="200" height="300" align="center">5.2</td>
+      </tr>
+      <!--Avatar-->
+      <tr>
+        <td><img src = "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGNens_IGL9MqtOmRCvPhC2fbq4Mkra_OQNjT_L88N2TyviO0g" width="200" height="300"/></td>
+        <td width="200" height="300" align="center"><a href = "https://www.imdb.com/title/tt0499549/">Avatar</a></td>
+        <td width="200" height="300" align="center">2009</td>
+        <td width="200" height="300" align="center">7.8</td>
+      </tr>
+      <!--Avengers: Infinity War-->
+      <tr>
+        <td><img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmE2vwxy5KaCu7cRuYYdgNdQKddux5OYgGwsPo0kqP_xzLnsDV" width="200" height="300"/></td>
+        <td width="200" height="300" align="center"><a href = "https://www.imdb.com/title/tt4154756/">Avengers: Infinity War</a></td>
+        <td width="200" height="300" align="center">2018</td>
+        <td width="200" height="300" align="center">8.4</td>
+      </tr>
+      <!--Alita: Battle Angel-->
+      <tr>
+        <td><img src = "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxo7Naxu0tjuSEZ9_faYL--aWjx8V5TKr4q2YeenYKXXik-T5P" width="200" height="300"/></td>
+        <td width="200" height="300" align="center"><a href = "https://www.imdb.com/title/tt0437086/">Alita: Battle Angel</a></td>
+        <td width="200" height="300" align="center">2019</td>
+        <td width="200" height="300" align="center">7.3</td>
+      </tr>
+    </table>
+
+    <!--Next Page Link-->
+    <p id="next">
+      <a href = "">Next==>></a>
+    </p>
+  </body>
+
+</html>
